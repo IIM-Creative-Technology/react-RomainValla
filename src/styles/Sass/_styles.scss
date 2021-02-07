@@ -1,0 +1,497 @@
+@import 'colors';
+@import 'typography';
+
+header {
+    height:100%;
+}
+
+.light-mode {
+    background-color: $background-main-light;
+    h1 {
+        color: $headline-light;
+        font-size: $headline;
+        font-family: $font-default;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: $headline;
+        font-weight: bold;
+        font-family: $font-default;
+        color: $headline-light;
+    }
+    h3 { 
+        font-family: $font-default;
+        font-size: $branding;
+        font-weight: bold;
+        color: $headline-light;
+        margin: 0 0 1rem 0;
+    } 
+    p {
+        color: $paragraph-light;
+        font-size: $paragraph;
+        font-family: $font-default;
+    }
+    a {
+        color: $button-text-light;
+        font-family: $font-default;
+        font-weight: normal;
+    }
+    button {
+        color: $button-text-light;
+        font-family: $font-default;
+        font-weight: normal;
+        background-color: $button-background-light;
+    }
+    select {
+        width: 400px;
+        background-color: inherit;
+        border: none;
+        padding: 40px 20px;
+        color: $headline-light;
+        font-family: $font-default;
+        font-weight: bold;
+        border: none;
+        text-align: center;
+        margin: 20px auto;
+        height: 30px;
+    }
+    .code-footer .code-footer__content .code-footer__item-list a {
+        svg {
+            stroke: black;
+        }
+    }
+    .code-navbar__logo {
+        color: $headline-light;
+        font-weight: bold;
+    }
+    .code-navbar__item {
+        color: $paragraph-light;
+    }
+    .code-main__categories {
+        background-color: $background-secondary-light;
+    }
+    .code-main__card {
+        background-color: $background-card-light;
+    }
+    .code-footer {
+        background-color: $background-secondary-light;
+    }
+    .code-quiz__answer {
+        button {
+            background-color: $background-card-dark;
+        }
+    }
+    .code-quiz__bloc-card {
+        background-color: $background-card-light;
+    }
+    .code-quiz__bloc {
+        background-color: $background-secondary-light;
+    }
+}
+.dark-mode {
+    background-color: $background-main-dark;
+    h1 {
+        color: $headline-dark;
+        font-size: $headline;
+        font-family: $font-default;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: $headline;
+        font-weight: bold;
+        font-family: $font-default;
+        color: $headline-dark;
+    }
+    h3 { 
+        font-family: $font-default;
+        font-size: $branding;
+        font-weight: bold;
+        color: $headline-dark;
+        margin: 0 0 1rem 0;
+    } 
+    p {
+        color: $paragraph-dark;
+        font-size: $paragraph;
+        font-family: $font-default;
+        
+    }
+    a {
+        color: $button-text-dark;
+        font-family: $font-default;
+        font-weight: normal;
+    }
+    button {
+        color: $button-text-dark;
+        font-family: $font-default;
+        font-weight: normal;
+        background-color: $button-background-dark;
+    }
+    select {
+        width: 400px;
+        background-color: inherit;
+        border: none;
+        padding: 40px 20px;
+        color: $headline-dark;
+        font-family: $font-default;
+        font-weight: bold;
+        border: none;
+        text-align: center;
+        margin: 20px auto;
+        height: 30px;
+    }
+    .code-footer__item-list {
+        svg {
+            stroke: white;
+        }
+    }
+    .code-navbar__logo {
+        color: $headline-dark;
+        font-weight: bold;
+    }
+    .code-navbar__item {
+        color: $paragraph-dark;
+    }
+    .code-main__categories {
+        background-color: $background-secondary-dark;
+    }
+    .code-main__card {
+        background-color: $background-card-dark;
+    }
+    .code-footer {
+        background-color: $background-main-dark;
+    }
+    .code-quiz__bloc-card {
+        background-color: $background-card-dark;
+    }
+    .code-quiz__bloc {
+        background-color: $background-secondary-dark;
+    }
+}
+
+
+
+
+
+
+
+
+
+.code-main {
+    .code-main__content {
+        height: auto;
+    }
+    .code-main__hero {
+        margin: 10% 5%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: flex-end;
+        .code-main__hero-img {
+            svg {
+                width: 700px;
+                height: auto;
+            }
+        }
+        .code-main__hero-title {
+            width: 50%;
+            
+        }
+        .code-main__hero-text {
+            width: 90%;
+        
+        }
+        .code-main__hero-cta {
+            margin: 2% 0;
+            
+        }
+        
+        @media screen and (max-width: 640px) {
+            .code-main__hero {
+                margin: 20% 5%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                .code-main__hero-title {
+                    width: 100%;
+                    h1 {
+                        font-size: $headline;
+                    }
+                }
+                .code-main__hero-text {
+                    width: 100%;
+                    p {
+                        font-size: $paragraph;
+                    }
+                }
+            }
+            
+        }
+    }
+    .code-main__categories{
+    
+        height: 100%;
+        padding: 0 0 5% 0;
+        .code-main__categories-cta {
+            margin: 5% 0;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .code-main__categories-headline {
+            padding: 10rem 0;
+            display: flex;
+            justify-content:flex-end;
+            flex-direction: column;
+            text-align: center; 
+        }
+        .code-main__categories-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 70%;
+            margin: 0 auto;
+
+            .code-main__card {
+                width: 500px;
+                height: 200px;
+                border-radius: 5px;
+                padding: 30px;
+                
+                margin: 20px;
+                transition: all .2s ease;
+
+            }
+            .code-main__card:hover {
+                transform: scale(1.05);
+                transform: rotate(-2deg);
+
+            }
+            
+        }
+        @media screen and (max-width: 640px) {
+            .code-main__categories-headline {
+                padding: 7rem 5%;
+                display: flex;
+                justify-content:flex-end;
+                flex-direction: column;
+                text-align: center; 
+            }
+            .code-main__categories-content {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-wrap: wrap;
+                width: 100%;
+                margin: 0 auto;
+    
+                .code-main__card {
+                    width: 500px;
+                    height: 200px;
+                    border-radius: 5px;
+                    padding: 30px;
+                    margin: 1rem;
+    
+                }
+                
+            } 
+        }
+        
+        
+    }
+    .code-main__weather {
+        background-color: $background-main-light;
+        height: 100%;
+        padding: 0 0 5% 0;
+        .code-main__weather-content {
+            padding: 5% 0 0 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            .code-main__weather-img {
+                margin: 0 auto;
+                svg {
+                    width: 200px;
+                    height: auto;
+                }
+            }
+            .code-main__weather-text {
+                text-align: center;
+                margin: 5% 0;
+                .code-main__weather-form{ 
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    text-align: center;
+                    input {
+                        width: 400px;
+                        padding: 20px 20px;
+                        font-family: $font-default;
+                        font-weight: bold;
+                        border: none;
+                        text-align: center;
+                        margin: 20px auto;
+                    }
+                }
+                .code-main__weather-response {
+                    font-family: $font-default;
+                    
+                    .code-weather__location-content {
+                        margin: 10px 0;
+                    }   
+                    .code-weather__temperature-content {
+                        margin: 10px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+.code-404 {
+    height: 100%;
+    width: 100%;
+    .code-404__content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .code-404__content-img {
+        margin: 5% auto;
+        svg {
+            margin: 0 auto;
+            width: 1000px;
+            height: auto;
+        }
+    }
+    .code-404__content-cta {
+        margin: 10% 0;
+        a {
+            font-family: $font-default;
+            font-weight: normal;
+        }
+    }
+}
+.code-quiz {
+    width: 100%;
+    height: 100%;
+    .code-quiz__content {
+        .code-quiz__content-text {
+            text-align: center;
+            margin: 5% 0;
+        }
+        .code-quiz__content-selector {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            padding: 0 20%;
+            a {
+                text-decoration: none;
+                font-family: $font-default;
+                font-size: $navigation;
+                font-weight: normal;
+                .code-quiz__button {
+                    border: 3px solid black;
+                    border-radius: 5px;
+                    padding: 10px 50px;
+                    margin: 20px;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center; 
+                    transition: all .2s ease;
+                }
+                .code-quiz__button:hover {
+                    transform: scale(1.1);
+                }
+                .active {
+                    background-color: $color-button;
+                }
+            }
+            .code-quiz__form {
+                form {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    text-align: center;
+                }
+                
+                button {
+                    font-weight: normal;
+                    padding: 20px 30px;
+                    border-radius: 5px;
+                    margin: 10px 0;
+                    width: 400px;
+                }
+            }
+            
+        }
+        .code-quiz__bloc {
+            margin: 5% 0;
+            padding: 5% 0;
+            display: flex;
+            justify-content: center;
+            .code-quiz__bloc-card {
+                padding: 0 5% 5% 5%;
+                height: auto;
+                border-radius: 10px;
+                width: 800px;
+                text-align: center;
+                h2 {
+                    margin: 5rem 0 0 0;
+                    font-family: $font-default;
+                    font-size: $branding;
+                }
+                span {
+                    text-transform: uppercase;
+                }
+                .code-quiz__question-count {
+                    width: 100%;
+                    padding: 5% 0;
+                    display: flex;
+                    justify-content: flex-start;
+                    p{
+                        font-family: $font-default;
+                        font-size: $paragraph;
+                        font-weight: bold;
+                    }
+                }
+                .code-quiz__question {
+                    width: 100%;
+                    padding: 2% 0;
+                    display: flex;
+                    justify-content: flex-start;
+                }
+                .code-quiz__answer {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    button {
+                        padding: 30px 30px;
+                        margin: 20px 0;
+                        border-radius: 5px;
+                        border: none;
+                        transition: all .2s ease;
+                        font-family: $font-default;
+                        font-size: $paragraph;
+                        font-weight: bold;
+                        
+                    }
+                    button:hover {
+                        transform: rotate(-2deg);
+                    }
+                }
+                .code-quiz__score {
+                    text-align: center;
+                    margin: 2% 0 0 0;
+
+                
+                }
+
+            }
+        }
+        
+    }
+}
