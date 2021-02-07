@@ -1,12 +1,12 @@
 @import 'colors';
 @import 'typography';
 
-header {
-    height:100%;
-}
 
 .light-mode {
     background-color: $background-main-light;
+    html {
+        background-color: $background-main-light; 
+    }
     h1 {
         color: $headline-light;
         font-size: $headline;
@@ -90,6 +90,9 @@ header {
 }
 .dark-mode {
     background-color: $background-main-dark;
+    html {
+        background-color: $background-main-dark; 
+    }
     h1 {
         color: $headline-dark;
         font-size: $headline;
